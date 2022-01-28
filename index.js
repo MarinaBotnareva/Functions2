@@ -72,25 +72,62 @@
 // console.log (sqrt(num1));
 
 // ЗАДАНИЕ 10
-let num1 = (Number(prompt('Введи первое число')));
-let num2 = (Number(prompt('Введи второе число')));
-let num3 = (Number(prompt('Введи третье число')));
-function quadraticEquation (a, b, c) {
-  if(a == 0){
-    console.log (false);
-  }
-  let D = b * b - 4 * a * c;
-  console.log('D = ' + D);
-  if(D < 0) {
-    console.log (false);
+// let num1 = (Number(prompt('Введи первое число')));
+// let num2 = (Number(prompt('Введи второе число')));
+// let num3 = (Number(prompt('Введи третье число')));
+// function quadraticEquation (a, b, c) {
+//   if(a == 0){
+//     console.log (false);
+//   }
+//   let D = b * b - 4 * a * c;
+//   console.log('D = ' + D);
+//   if(D < 0) {
+//     console.log (false);
+//   } 
+//   if(D === 0) {
+//     console.log ((0 - b) + Math.sqrt(D)) / (2 * a);
+//   }
+//   else {
+//     let res1 = ((0 - b) + Math.sqrt(D)) / (2 * a)
+//     let res2 = ((0 - b) - Math.sqrt(D)) / (2 * a)
+//       console.log(res1, res2)
+//   }
+// }
+// quadraticEquation(num1, num2, num3);
+
+// ЗАДАНИЕ 11
+// let month = (Number(prompt('Номер месяца')));
+// function getSeason (num) {
+//   if (num>0 && num < 3 || num === 12) {
+//     return 'зима'
+//   }  if (num>2 && num < 6) {
+//     return 'весна'
+//   } if (num>5 && num < 9) {
+//     return 'лето'
+//   } if (num>8 && num < 12) {
+//     return 'осень'
+//   } else {
+//     return 'Таких месяцев не существует'
+//   }
+// }
+// getSeason(month);
+// let x = getSeason(month);
+// console.log (x);
+
+// ЗАДАНИЕ 12
+let country = prompt('Выбери страну: Vietnam, Ukraine, Japan');
+let age = Number(prompt('Твой возраст'));
+function adult (country, age) {
+  switch (country) {
+    case 'Vietnam':
+      console.log(age>=16?true:false);
+      break;
+    case 'Ukraine':
+      console.log(age>=18?true:false);
+      break;
+    case 'Japan':
+      console.log(age>=20?true:false);
+      break;
   } 
-  if(D === 0) {
-    console.log ((0 - b) + Math.sqrt(D)) / (2 * a);
-  }
-  else {
-    let res1 = ((0 - b) + Math.sqrt(D)) / (2 * a)
-    let res2 = ((0 - b) - Math.sqrt(D)) / (2 * a)
-      console.log(res1, res2)
-  }
 }
-quadraticEquation(num1, num2, num3);
+  adult(country,age);
