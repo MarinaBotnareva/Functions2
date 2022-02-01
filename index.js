@@ -11,7 +11,7 @@
 // ЗАДАНИЕ 2
 // let text = prompt('Введите текст');
 // function isNotEmpty (enter) {
-//   alert (enter === ''? false:true); 
+//   return enter === ''? false:true; 
 // }
 // isNotEmpty(text);
 
@@ -20,9 +20,9 @@
 // let num = Number(prompt('Количество'));
 // function calcFullPrice (a, b) {
 //   if (isNaN(a) || isNaN(b)){
-//     alert(false);
+//     return false;
 //   }
-//   console.log(a*b);
+//   return a*b;
 // }
 // calcFullPrice(price, num);
 
@@ -30,7 +30,7 @@
 // let price = (Number(prompt('Сумма заказа')));
 // let money = (Number(prompt('Сколько денег в кошельке')));
 // function isEnougnMoney (a, b) {
-// alert (a<=b?true:false);
+// return a<=b?true:false;
 // }
 // isEnougnMoney(price, money);
 
@@ -46,14 +46,14 @@
 // ЗАДАНИЕ 6
 // let num1 = (Number(prompt('Введи число')));
 // function check (a) {
-//   alert (a<0 || a>10?false:true);
+//   return a<0 || a>10?false:true;
 // }
 // check(num1);
 
 // ЗАДАНИЕ 7
 // let num1 = (Number(prompt('Введи число')));
 // function mod (a) {
-//   alert (a<0?Math.abs(num1):a);
+//   return a<0?Math.abs(num1):a;
 // }
 // mod(num1);
 
@@ -77,20 +77,20 @@
 // let num3 = (Number(prompt('Введи третье число')));
 // function quadraticEquation (a, b, c) {
 //   if(a == 0){
-//     console.log (false);
+//     return false;
 //   }
 //   let D = b * b - 4 * a * c;
-//   console.log('D = ' + D);
+//   return 'D = ' + D;
 //   if(D < 0) {
-//     console.log (false);
+//    return false;
 //   } 
 //   if(D === 0) {
-//     console.log ((0 - b) + Math.sqrt(D)) / (2 * a);
+//     return ((0 - b) + Math.sqrt(D)) / (2 * a);
 //   }
 //   else {
-//     let res1 = ((0 - b) + Math.sqrt(D)) / (2 * a)
-//     let res2 = ((0 - b) - Math.sqrt(D)) / (2 * a)
-//       console.log(res1, res2)
+//     let res1 = ((0 - b) + Math.sqrt(D)) / (2 * a);
+//     let res2 = ((0 - b) - Math.sqrt(D)) / (2 * a);
+//       return res1 + ', ' + res2;
 //   }
 // }
 // quadraticEquation(num1, num2, num3);
@@ -120,13 +120,13 @@ let age = Number(prompt('Твой возраст'));
 function adult (country, age) {
   switch (country) {
     case 'Vietnam':
-      console.log(age>=16?true:false);
+      return age>=16?true:false;
       break;
     case 'Ukraine':
-      console.log(age>=18?true:false);
+      return age>=18?true:false;
       break;
     case 'Japan':
-      console.log(age>=20?true:false);
+      return age>=20?true:false;
       break;
   } 
 }
